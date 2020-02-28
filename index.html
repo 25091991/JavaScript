@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Program za računanje zapremine valjka">
+        <meta name="keywords" content="Poluprečnik,Visina,Zapremina">
+        <meta name="author" content="Kristina Smiljković">
+        <title> Program za računanje zapremine valjka </title>
+        <style>
+            input {
+                padding: 10px;
+	            margin: 50px;
+            }
+           .clas {
+               background-color: cornflowerblue;
+           }
+           #pozicija {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%, -50%);
+           
+           }
+        </style>
+    </head>
+    <body class="clas">
+      <div id="pozicija">
+        <label>Poluprečnik:</label>
+        <br>
+        <input id="poluprecnik" type="number" onchange="myFunction()" value="">
+        <br>
+        <label>Visina:</label>
+        <br>
+        <input id="visina" type="number" onchange="myFunction()" value="">
+        <br>
+        <label>Zapremina valjka je:</label>
+        <br>
+        <input id="rezultat" type="number" disabled value="">
+        <br>
+
+        <script  src="javascript.js"></script>
+    </div>
+    </body>
+</html>
